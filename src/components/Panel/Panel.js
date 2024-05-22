@@ -1,12 +1,12 @@
 function Panel({ project }) {
   return (
     <div className="h-full">
-      <table>
-        <th className="text-2xl font-semibold h-20 ">
+      <table className="w-full">
+        <tr>
           <td>Task</td>
           <td>Assigned</td>
           <td>Progress</td>
-        </th>
+        </tr>
         {project.tasks.map((task) => (
           <tr>
             <td>{task.title}</td>
