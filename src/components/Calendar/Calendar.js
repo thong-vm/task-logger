@@ -10,7 +10,7 @@ function Calendar({ year }) {
     }
     return calendar;
   };
-  return <div className="flex ">{renderCalendar()}</div>;
+  return <div className="flex h-full">{renderCalendar()}</div>;
 }
 
 export default Calendar;

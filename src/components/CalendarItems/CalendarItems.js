@@ -24,7 +24,7 @@ function CalendarItems({ month, year }) {
     for (let i = 1; i <= daysInMonth; i++) {
       const dayOfWeek = new Date(currentYear, currentMonth, i).getDay();
       calendar.push(
-        <div key={i} className="w-10 border border-gray-300 text-center">
+        <div key={i} className="w-10 h-full border border-gray-300 text-center">
           <div className="text-sm text-gray-500">{daysOfWeek[dayOfWeek]}</div>
           <div>{i}</div>
         </div>
@@ -35,10 +35,10 @@ function CalendarItems({ month, year }) {
 
   return (
     <div className="container mx-auto border">
-      <h1 className="text-2xl font-semibold mb-4">
+      <h1 className="text-2xl font-semibold mb-4 h-[3%]">
         {months[currentMonth]} {currentYear}
       </h1>
-      <div className="flex">{generateCalendar()}</div>
+      <div className="flex h-[95%]">{generateCalendar()}</div>
     </div>
   );
 }
