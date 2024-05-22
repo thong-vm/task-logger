@@ -1,11 +1,8 @@
 function Panel({ project }) {
-  const tasks = project.tasks.map((task) => (
-    <span className="hover:font-bold hover:cursor-pointer">{task.title}</span>
-  ));
   return (
     <div className="h-full">
       <table>
-        <th className="text-2xl font-semibold mb-4 ">
+        <th className="text-2xl font-semibold h-20 ">
           <td>Task</td>
           <td>Assigned</td>
           <td>Progress</td>
