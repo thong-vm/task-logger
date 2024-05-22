@@ -24,7 +24,10 @@ function CalendarItems({ month, year }) {
     for (let i = 1; i <= daysInMonth; i++) {
       const dayOfWeek = new Date(currentYear, currentMonth, i).getDay();
       calendar.push(
-        <div key={i} className="w-10 h-full border border-gray-300 text-center">
+        <div
+          key={i}
+          className="w-10 h-full border bg-slate-100 border-gray-300 text-center"
+        >
           <div className="text-sm text-gray-500">{daysOfWeek[dayOfWeek]}</div>
           <div>{i}</div>
         </div>
